@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Star</title>
+</head>
+
+<body>
+    <div class="circulo"></div>
+    <img src="./img/logo.png" alt="logo star" class="logo">
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h2>Não é apenas café, é <span>Star</span></h2>
+            <p>|Coffee|</p>
+            <button>Deixe seu Like</button>
+        </div>
+        <div class="caixa-imagem">
+            <img src="./img/img1.png" alt="copa star" class="star">
+        </div>
+    </div>
+    <div class="menu">
+        <img src="./img/img-pequena1.png" class="copo-pequeno verde">
+        <img src="./img/img-pequena2.png" class="copo-pequeno amarelo">
+        <img src="./img/img-pequena3.png" class="copo-pequeno rosa">
+    </div>    
+</body>
+<script>
+    let circulo = document.querySelector(".circulo")
+    let imgCopo = document.querySelector(".star")
+    let verde = document.querySelector(".verde")
+    let amarelo = document.querySelector(".amarelo")
+    let rosa = document.querySelector(".rosa")
+
+    verde.addEventListener("click", () => {
+        imgCopo.src = "./img/img1.png"
+        circulo.style.background = "#006400"
+    })
+
+    amarelo.addEventListener("click", () => {
+        imgCopo.src = "./img/img2.png"
+        circulo.style.background = "#FFFF00"
+    })
+
+    rosa.addEventListener("click", () => {
+        imgCopo.src = "./img/img3.png"
+        circulo.style.background = "#FF1493"
+    })
+</script>
+</html>
